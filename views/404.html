@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Not Found</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.11.0/dist/full.css"
+      rel="stylesheet"
+    />
+    <link href="./../public/css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a href="/lego/sets?theme=Theme1">Theme 1</a>
+                <a href="/lego/sets?theme=Theme2">Theme 2</a>
+                <a href="/lego/sets?theme=Theme3">Theme 3</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./home.html"
+            >Lego Collection</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1"></ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn" href="./about.html">About</a>
+        </div>
+      </div>
+    </nav>
+    <div role="alert" class="alert alert-error">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="stroke-current shrink-0 h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+      <span>Error! Task failed successfully.</span>
+    </div>
+    <div class="container mx-auto my-8 lg:my-16">
+      <!-- 404 Hero Section -->
+      <div class="bg-primary p-8 text-white">
+        <h1 class="text-4xl font-bold mb-4">404 - Not Found</h1>
+        <p class="text-lg mb-8">
+          Oops! The page you're looking for could not be found.
+        </p>
+      </div>
+
+      <!-- 404 Message/ Image -->
+      <div class="text-center mt-8">
+        <img src="404-image.jpg" alt="404 Not Found" class="mx-auto max-w-md" />
+      </div>
+    </div>
+  </body>
+</html>

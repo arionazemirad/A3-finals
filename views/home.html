@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEGO Collection</title>
+    <link rel="stylesheet" href="./../public/css/output.css" />
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include Daisy UI CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.11.0/dist/full.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a>Theme</a>
+                <ul class="p-2">
+                  <li><a href="/lego/sets?theme=Theme1">Theme 1</a></li>
+                  <li><a href="/lego/sets?theme=Theme2">Theme 2</a></li>
+                  <li><a href="/lego/sets?theme=Theme3">Theme 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl" href="./home.html"
+            >Lego Collection</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1"></ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn" href="./about">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mx-auto my-8 lg:my-16">
+      <!-- Hero Section -->
+      <div class="bg-primary p-8 text-white">
+        <h1 class="text-4xl font-bold mb-4">Explore our Lego Collection</h1>
+        <p class="text-lg mb-8">
+          Discover a world of creativity with our extensive Lego sets
+          collection.
+        </p>
+        <a href="/lego/sets" class="btn btn-primary">Explore Now</a>
+      </div>
+
+      <!-- Grid of Lego Sets -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <!-- Lego Set Card 1 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <img
+            src="https://cdn.rebrickable.com/media/sets/001-1.jpg"
+            class="max-w-sm rounded-lg mb-4"
+          />
+          <h2 class="text-xl font-semibold mb-2">Gears</h2>
+          <p class="text-gray-600 mb-4">
+            This classic set from 1965 features 43 parts to build various gears
+            and mechanisms.
+          </p>
+          <a href="/lego/sets/001-1" class="btn btn-primary">View Set</a>
+        </div>
+
+        <!-- Lego Set Card 2 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <img
+            src="https://cdn.rebrickable.com/media/sets/0011-2.jpg"
+            class="max-w-sm rounded-lg mb-4"
+          />
+          <h2 class="text-xl font-semibold mb-2">Town Mini-Figures</h2>
+          <p class="text-gray-600 mb-4">
+            Released in 1979, this set includes 12 mini-figures to populate your
+            Lego town.
+          </p>
+          <a href="/lego/sets/0011-2" class="btn btn-primary">View Set</a>
+        </div>
+
+        <!-- Lego Set Card 3 -->
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <img
+            src="https://cdn.rebrickable.com/media/sets/0011-3.jpg"
+            class="max-w-sm rounded-lg mb-4"
+          />
+          <h2 class="text-xl font-semibold mb-2">Castle 2 for 1 Bonus Offer</h2>
+          <p class="text-gray-600 mb-4">
+            An offer from 1987, get two castle-themed sets for the price of one.
+          </p>
+          <a href="/lego/sets/0011-3" class="btn btn-primary">View Set</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
